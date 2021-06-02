@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-#%%
 import pandas as pd 
 from selenium import webdriver
 
@@ -136,4 +133,3 @@ class ParseURLS:
         new_players_series = new_players_series.str.lower()
 
         return players_series
-# %%

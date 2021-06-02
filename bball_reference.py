@@ -1,4 +1,3 @@
-#%%
 from numpy.core.numeric import NaN
 import pandas as pd 
 from selenium import webdriver
@@ -124,7 +123,7 @@ class BBallScrape(ParseURLS):
     def ReturnAllData(self): 
 
         self.player_salary = self.PlayerSalary(
-            current_year = True if self.year is 2021 else False
+            current_year == True if self.year is 2021 else False
         )
 
         self.player_stats = self.PlayerStats()
@@ -191,13 +190,3 @@ class BBallScrape(ParseURLS):
         browser.quit()
 
         return self.salary_cap
-
- 
-
-
-
-
-
-
-
-
